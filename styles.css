@@ -1,0 +1,53 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+.dark-mode .navbar {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .btn-outline-dark {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.dark-mode .bg-white {
+  background-color: #2c2c2c !important;
+  color: #ffffff !important;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #ff7e5f !important;
+  border-color: #ff7e5f !important;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #eb5d42 !important;
+  border-color: #eb5d42 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+}
