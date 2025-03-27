@@ -19,7 +19,7 @@ const Projects = () => {
       description:
         'A chatbot application that uses AI and machine learning to provide intelligent responses to user queries.',
       image:
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+        'https://images.unsplash.com/photo-1718241905462-56e7b9f722f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
       demoLink: 'https://voxa-chatbot.vercel.app/',
       technologies: [
         { name: 'HTML', icon: <SiHtml5 className="text-[#E34F26]" /> },
@@ -33,7 +33,7 @@ const Projects = () => {
       description:
         'A simple password generator that creates strong and secure passwords based on user-defined criteria.',
       image:
-        'https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80',
+        'https://images.unsplash.com/photo-1633265486064-086b219458ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80',
       demoLink: 'https://password-generator-ss.vercel.app/',
       technologies: [
         { name: 'HTML', icon: <SiHtml5 className="text-[#E34F26]" /> },
