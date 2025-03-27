@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import {
   FaGithub,
-  FaLinkedin,
-  FaTwitter,
+  FaInstagram,
   FaEnvelope,
   FaMapMarkerAlt,
 } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,20 +45,32 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: <FaEnvelope />,
-      text: 'jane.doe@example.com',
-      href: 'mailto:jane.doe@example.com',
+      text: 'faisalhs809@gmail.com',
+      href: 'mailto:faisalhs809@gmail.com',
     },
     {
       icon: <FaMapMarkerAlt />,
-      text: 'San Francisco, CA',
+      text: 'Lucknow, Uttar Pradesh, India',
       href: null,
     },
   ];
 
   const socialLinks = [
-    { icon: <FaGithub />, href: 'https://github.com', label: 'GitHub' },
-    { icon: <FaLinkedin />, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <FaTwitter />, href: 'https://twitter.com', label: 'Twitter' },
+    {
+      icon: <FaGithub />,
+      href: 'https://github.com/leofaisal809m',
+      label: 'GitHub',
+    },
+    {
+      icon: <FaInstagram />,
+      href: 'https://www.instagram.com/faisal.hasan__',
+      label: 'Instagram',
+    },
+    {
+      icon: <HiOutlineMail />,
+      href: 'mailto:faisalhs809@gmail.com',
+      label: 'Gmail',
+    },
   ];
 
   return (

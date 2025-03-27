@@ -1,25 +1,27 @@
 import { motion } from 'framer-motion';
 import {
-  FaReact,
-  FaJs,
-  FaHtml5,
-  FaCss3Alt,
-  FaNode,
-  FaGitAlt,
-} from 'react-icons/fa';
-import { SiTailwindcss, SiTypescript, SiFigma } from 'react-icons/si';
+  SiPython,
+  SiTensorflow,
+  SiScikitlearn,
+  SiPandas,
+  SiNumpy,
+} from 'react-icons/si';
+import { LuBrain } from 'react-icons/lu';
 
 const About = () => {
   const skills = [
-    { name: 'React', icon: <FaReact className="text-[#61DAFB]" /> },
-    { name: 'JavaScript', icon: <FaJs className="text-[#F7DF1E]" /> },
-    { name: 'HTML5', icon: <FaHtml5 className="text-[#E34F26]" /> },
-    { name: 'CSS3', icon: <FaCss3Alt className="text-[#1572B6]" /> },
-    { name: 'Tailwind', icon: <SiTailwindcss className="text-[#06B6D4]" /> },
-    { name: 'TypeScript', icon: <SiTypescript className="text-[#3178C6]" /> },
-    { name: 'Node.js', icon: <FaNode className="text-[#339933]" /> },
-    { name: 'Git', icon: <FaGitAlt className="text-[#F05032]" /> },
-    { name: 'Figma', icon: <SiFigma className="text-[#F24E1E]" /> },
+    { name: 'Python', icon: <SiPython className="text-[#306998]" /> },
+    { name: 'TensorFlow', icon: <SiTensorflow className="text-[#FF6F00]" /> },
+    {
+      name: 'Scikit-Learn',
+      icon: <SiScikitlearn className="text-[#FEDD00]" />,
+    },
+    { name: 'Pandas', icon: <SiPandas className="text-[#f6b832]" /> },
+    { name: 'NumPy', icon: <SiNumpy className="text-[#4ba6c9]" /> },
+    {
+      name: 'Deep Learning',
+      icon: <LuBrain className="text-[#FF4500]" />,
+    },
   ];
 
   return (
@@ -60,21 +62,20 @@ const About = () => {
             className="space-y-6"
           >
             <h3 className="text-2xl font-bold">
-              Crafting digital experiences with code and creativity
+              Merging Data Science with Machine Learning Innovation
             </h3>
 
             <p className="text-gray-600 dark:text-gray-300">
-              I'm a passionate web developer currently pursuing my degree in
-              Computer Science. My journey in web development started 3 years
-              ago when I built my first website, and I've been hooked ever
-              since.
+              I am an aspiring AI/ML engineer with a strong foundation in data
+              analysis and machine learning. With hands-on experience in Python
+              and various ML frameworks, I strive to create intelligent systems
+              that turn raw data into actionable insights.
             </p>
 
             <p className="text-gray-600 dark:text-gray-300">
-              I specialize in creating responsive, user-friendly websites and
-              applications. When I'm not coding, you'll find me exploring new
-              technologies, contributing to open-source projects, or sketching
-              UI designs.
+              My journey into AI began with real-world data projects, gradually
+              enhancing my skills in model building, training, and deployment. I
+              am eager to push technology forward with innovative AI solutions.
             </p>
 
             <div>
@@ -88,10 +89,12 @@ const About = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.1 }}
                     whileHover={{ y: -5 }}
-                    className="flex flex-col items-center bg-white dark:bg-gray-800 p-3 rounded-lg shadow-md"
+                    className="flex flex-col justify-center items-center bg-white dark:bg-gray-800 p-3 rounded-lg shadow-md"
                   >
                     <div className="text-3xl mb-2">{skill.icon}</div>
-                    <span className="text-sm font-medium">{skill.name}</span>
+                    <span className="text-center text-sm font-medium">
+                      {skill.name}
+                    </span>
                   </motion.div>
                 ))}
               </div>

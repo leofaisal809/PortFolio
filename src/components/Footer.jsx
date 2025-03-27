@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaHeart } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Footer = () => {
   const navLinks = [
@@ -10,9 +11,21 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <FaGithub />, href: 'https://github.com', label: 'GitHub' },
-    { icon: <FaLinkedin />, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <FaTwitter />, href: 'https://twitter.com', label: 'Twitter' },
+    {
+      icon: <FaGithub />,
+      href: 'https://github.com/leofaisal809m',
+      label: 'GitHub',
+    },
+    {
+      icon: <FaInstagram />,
+      href: 'https://www.instagram.com/faisal.hasan__',
+      label: 'Instagram',
+    },
+    {
+      icon: <HiOutlineMail />,
+      href: 'mailto:faisalhs809@gmail.com',
+      label: 'Gmail',
+    },
   ];
 
   return (

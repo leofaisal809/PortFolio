@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaNode } from 'react-icons/fa';
-import { SiTailwindcss, SiFirebase, SiMongodb } from 'react-icons/si';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import {
+  SiReact,
+  SiNodedotjs,
+  SiHtml5,
+  SiJavascript,
+  SiCss3,
+} from 'react-icons/si';
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -10,50 +15,33 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Dashboard',
+      title: 'AI Chatbot',
       description:
-        'A responsive admin dashboard for an e-commerce platform with data visualization, inventory management, and user authentication.',
+        'A chatbot application that uses AI and machine learning to provide intelligent responses to user queries.',
       image:
-        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      demoLink: '#',
-      codeLink: '#',
+        'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      demoLink: 'https://voxa-chatbot.vercel.app/',
       technologies: [
-        { name: 'React', icon: <FaReact className="text-[#61DAFB]" /> },
-        {
-          name: 'Tailwind CSS',
-          icon: <SiTailwindcss className="text-[#06B6D4]" />,
-        },
-        { name: 'Firebase', icon: <SiFirebase className="text-[#FFCA28]" /> },
+        { name: 'HTML', icon: <SiHtml5 className="text-[#E34F26]" /> },
+        { name: 'React', icon: <SiReact className="text-[#61DAFB]" /> },
+        { name: 'Node.js', icon: <SiNodedotjs className="text-[#8CC84B]" /> },
       ],
     },
     {
       id: 2,
-      title: 'Recipe Finder App',
+      title: 'Password Generator',
       description:
-        'A mobile-responsive web application that allows users to search for recipes based on ingredients, dietary restrictions, and cuisine types.',
+        'A simple password generator that creates strong and secure passwords based on user-defined criteria.',
       image:
-        'https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
-      demoLink: '#',
-      codeLink: '#',
+        'https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80',
+      demoLink: 'https://password-generator-ss.vercel.app/',
       technologies: [
-        { name: 'JavaScript', icon: <FaJs className="text-[#F7DF1E]" /> },
-        { name: 'HTML5', icon: <FaHtml5 className="text-[#E34F26]" /> },
-        { name: 'CSS3', icon: <FaCss3Alt className="text-[#1572B6]" /> },
-      ],
-    },
-    {
-      id: 3,
-      title: 'Task Management Platform',
-      description:
-        'A full-stack application for project management with features like task assignment, progress tracking, and team collaboration.',
-      image:
-        'https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      demoLink: '#',
-      codeLink: '#',
-      technologies: [
-        { name: 'React', icon: <FaReact className="text-[#61DAFB]" /> },
-        { name: 'Node.js', icon: <FaNode className="text-[#339933]" /> },
-        { name: 'MongoDB', icon: <SiMongodb className="text-[#47A248]" /> },
+        { name: 'HTML', icon: <SiHtml5 className="text-[#E34F26]" /> },
+        { name: 'CSS', icon: <SiCss3 className="text-[#1572B6]" /> },
+        {
+          name: 'JavaScript',
+          icon: <SiJavascript className="text-[#F7DF1E]" />,
+        },
       ],
     },
   ];
@@ -91,7 +79,7 @@ const Projects = () => {
         </motion.h2>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -124,14 +112,6 @@ const Projects = () => {
                       className="bg-white text-gray-900 p-2 rounded-full hover:bg-primary-light hover:text-white transition-colors"
                     >
                       <FaExternalLinkAlt />
-                    </a>
-                    <a
-                      href={project.codeLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-white text-gray-900 p-2 rounded-full hover:bg-primary-light hover:text-white transition-colors"
-                    >
-                      <FaGithub />
                     </a>
                   </div>
                 </div>

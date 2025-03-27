@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaInstagram } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Hero = () => {
   const containerVariants = {
@@ -33,7 +34,7 @@ const Hero = () => {
           >
             <motion.div variants={itemVariants} className="relative mb-4">
               <span className="bg-gradient-to-r from-primary-light to-secondary-light text-white text-sm font-medium px-4 py-2 rounded-full">
-                Web Developer & Designer
+                Aspiring AI/ML Engineer
               </span>
             </motion.div>
 
@@ -43,7 +44,7 @@ const Hero = () => {
             >
               Hi, I'm{' '}
               <span className="bg-gradient-to-r from-primary-light to-secondary-light text-transparent bg-clip-text">
-                Jane Doe
+                Faisal Hasan
               </span>
             </motion.h1>
 
@@ -51,9 +52,8 @@ const Hero = () => {
               variants={itemVariants}
               className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl"
             >
-              A creative web developer with a passion for building beautiful,
-              functional websites and applications. I transform ideas into
-              digital experiences.
+              An aspiring AI/ML engineer with a passion for leveraging
+              data-driven insights to build intelligent systems.
             </motion.p>
 
             <motion.div
@@ -61,11 +61,11 @@ const Hero = () => {
               className="flex flex-wrap gap-4"
             >
               <a href="#projects" className="btn-primary">
-                View My Work
+                Explore My Projects
               </a>
               <a
                 href="#contact"
-                className="py-3 px-6 border-2 border-primary-light text-primary-light dark:text-primary-light font-medium rounded-lg transition duration-300 hover:bg-primary-light hover:text-white"
+                className="py-3 px-6 border-2 border-primary-light text-primary-light dark:text-primary-light font-medium rounded-lg transition duration-300 hover:bg-primary-light hover:text-white dark:hover:text-white"
               >
                 Contact Me
               </a>
@@ -76,7 +76,7 @@ const Hero = () => {
               className="flex items-center space-x-4 mt-8"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/leofaisal809"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-light transition-colors"
@@ -84,20 +84,20 @@ const Hero = () => {
                 <FaGithub size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.instagram.com/faisal.hasan__"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-light transition-colors"
               >
-                <FaLinkedin size={24} />
+                <FaInstagram size={24} />
               </a>
               <a
-                href="https://twitter.com"
+                href="mailto:faisalhs809@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-light transition-colors"
               >
-                <FaTwitter size={24} />
+                <HiOutlineMail size={24} />
               </a>
             </motion.div>
           </motion.div>
@@ -113,9 +113,12 @@ const Hero = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-card-light dark:bg-card-dark rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl h-64 w-64 sm:h-80 sm:w-80">
                   <img
-                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80"
+                    src="/Faisal.jpeg"
                     alt="Profile"
                     className="w-full h-full object-cover"
+                    style={{
+                      filter: 'sepia(2) hue-rotate(281deg) saturate(2)',
+                    }}
                   />
                 </div>
               </div>
